@@ -1,0 +1,41 @@
+#navbar{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;
+	text-align: top;
+}
+#about{
+	background-color: blue;
+}
+#welcome{
+	background-color: yellow;
+}
+#social_media{
+	list-style-type: none;
+	padding: 12px;
+}
+li{
+	float: left;
+	color: white;
+}
+li a{
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 26px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: white;
+		color: grey;
+}
+
+li a:active {
+	background-color: yellow;
+
+}
+body {
+	background-color: blue;
+}
