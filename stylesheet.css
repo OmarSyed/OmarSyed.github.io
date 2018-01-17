@@ -6,20 +6,33 @@
 	background-color: black;
 	text-align: top;
 }
+
 #about{
 	background-color: blue;
 }
+
 #welcome{
-	background-color: yellow;
+	background-color: white;
 }
+
 #social_media{
 	list-style-type: none;
-	padding: 12px;
+ 	text-align: center;
 }
+
+#projects{
+	list-style-type: none;
+}
+
+#contact{
+	background-color: white;
+}
+
 li{
 	float: left;
 	color: white;
 }
+
 li a{
 	display: block;
     color: white;
@@ -27,6 +40,7 @@ li a{
     padding: 14px 26px;
     text-decoration: none;
 }
+
 li a:hover {
     background-color: white;
 		color: grey;
@@ -34,8 +48,8 @@ li a:hover {
 
 li a:active {
 	background-color: yellow;
-
 }
+
 body {
 	background-color: blue;
 }
