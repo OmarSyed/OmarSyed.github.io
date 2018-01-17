@@ -8,11 +8,11 @@
 }
 
 #about{
-	background-color: blue;
+
 }
 
 #welcome{
-	background-color: white;
+
 }
 
 #social_media{
@@ -25,31 +25,31 @@
 }
 
 #contact{
-	background-color: white;
+
 }
 
-li{
+.button{
 	float: left;
 	color: white;
 }
 
-li a{
-	display: block;
+li.button a {
+	  display: block;
     color: white;
     text-align: center;
     padding: 14px 26px;
     text-decoration: none;
 }
 
-li a:hover {
+li.button a:hover {
     background-color: white;
 		color: grey;
 }
 
-li a:active {
+li.button a:active {
 	background-color: yellow;
 }
 
 body {
-	background-color: blue;
+	background-color: white;
 }
