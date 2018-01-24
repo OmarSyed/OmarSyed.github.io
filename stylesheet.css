@@ -29,7 +29,7 @@
 }
 
 #page{
-	background-color: yellow; 
+	background-color: yellow;
 }
 .button{
 	float: left;
@@ -54,5 +54,5 @@ li.button a:active {
 }
 
 body {
-	background-color: white;
+	
 }
