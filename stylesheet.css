@@ -8,27 +8,29 @@
 }
 
 #about{
-
+	background-color: yellow;
 }
 
 #welcome{
-
+	background-color: yellow;
 }
 
 #social_media{
 	list-style-type: none;
+	border-style: groove;
  	text-align: center;
 }
 
 #projects{
 	list-style-type: none;
+	font-size: 20px;
 }
 
 #contact{
 
 }
 
-#page{
+.page{
 	background-color: yellow;
 }
 .button{
@@ -54,5 +56,5 @@ li.button a:active {
 }
 
 body {
-	
+
 }
