@@ -28,6 +28,9 @@
 
 }
 
+#page{
+	background-color: yellow; 
+}
 .button{
 	float: left;
 	color: white;
