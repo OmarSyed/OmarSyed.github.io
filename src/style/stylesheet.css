@@ -1,0 +1,60 @@
+#navbar{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;
+	text-align: top;
+}
+
+#about{
+	background-color: yellow;
+}
+
+#welcome{
+	background-color: yellow;
+}
+
+#social_media{
+	list-style-type: none;
+	border-style: groove;
+ 	text-align: center;
+}
+
+#projects{
+	list-style-type: none;
+	font-size: 20px;
+}
+
+#contact{
+
+}
+
+.page{
+	background-color: yellow;
+}
+.button{
+	float: left;
+	color: white;
+}
+
+li.button a {
+	  display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 26px;
+    text-decoration: none;
+}
+
+li.button a:hover {
+    background-color: white;
+		color: grey;
+}
+
+li.button a:active {
+	background-color: yellow;
+}
+
+body {
+		background-color: yellow;
+}
