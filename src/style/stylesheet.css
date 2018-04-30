@@ -5,6 +5,8 @@
 html,
 body {
     overflow-x: hidden; /* Prevent scroll on narrow devices */
+    opacity: 0.8;
+    background-image: "C:\\Users\\omars_000\\Pictures\\20180430_171858";
 }
 body {
     padding-top: 100px;
@@ -21,10 +23,6 @@ footer {
     font-size: 24px;
 }
 
-.background-image{
-    opacity: 0.8;
-    background-image: "C:\\Users\\omars_000\\Pictures\\20180430_171858";
-}
 
 .navbar-container {
     padding: 20px 0 20px 0;
