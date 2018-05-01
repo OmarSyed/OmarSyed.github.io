@@ -5,8 +5,9 @@
 body {
     padding-top: 100px;
     opacity: 0.8;
-    background-image: "https://media.licdn.com/dms/image/C4D03AQF9Uh03abMkSg/profile-displayphoto-shrink_200_200/0?e=1530237600&v=beta&t=WLmqP4YYyiASNZ5sM94CHkJ3xD28eKYeLxdGZWgicRU";
+    background-image: url("https://media.licdn.com/dms/image/C4D03AQF9Uh03abMkSg/profile-displayphoto-shrink_200_200/0?e=1530237600&v=beta&t=WLmqP4YYyiASNZ5sM94CHkJ3xD28eKYeLxdGZWgicRU");
 }
+
 footer {
     padding: 30px 0;
 }
