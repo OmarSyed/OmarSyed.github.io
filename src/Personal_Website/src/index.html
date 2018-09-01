@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="styles.css">
+		<!-- Latest compiled JavaScript -->
+		<script src="animation.js"></script>
+		
+		<script>
+			jQuery.noConflict();
+			jQuery(document).ready(function(){
+				jQuery("#welcome").hide();
+				jQuery("#clickhere").hide();
+				jQuery(".downarrow").hide();
+				jQuery("#welcome").fadeIn(2000);
+				jQuery("#clickhere").fadeIn(2000);
+				jQuery(".downarrow").fadeIn(2000);
+			});
+		</script>
+	</head>
+	
+	<body>
+		<div class="nav">
+			<nav>
+				<ul class="top_nav">
+					<li> <a id="home_active" href="index.html"> Home </a> </li>
+					
+					<li> <a href="about.html"> About </a> </li>
+					
+					<li> <a href="projects.html"> Projects </a> </li>
+					
+					<li> <a href="contact.html"> Contact </a> </li>
+					
+					<li> <a href="C:/Users/omars_000/OneDrive/Documents/OmarSyedResume (General).pdf" target="_blank"> Resume </a> </li>
+				</ul>
+			</nav>
+		</div>
+		<div class="nav">
+			<nav>
+				<ul class="bottom_nav"> 
+					<li> <a href="https://www.linkedin.com/in/omar-syed-71b001134/"> Linkedin </a> </li>
+					
+					<li> <a href="https://www.github.com/OmarSyed"> Github </a> </li>
+				</ul>
+			</nav>
+		</div>
+		
+		<div id="Home" class="container-fluid">
+			<img id="pic" src="C:\Users\omars_000\Desktop\Personal_Website\rsrc\index_pic.jpg" class="img-rounded">
+			<div id="welcome">
+				<h2> Welcome to my page! </h2>
+				<h3> My name is Omar Syed. I am a software engineer and senior majoring in Computer Science at Stony Brook University. 
+				Feel free to check out my projects and resume. </h3>
+			</div>
+			<div class="downarrow">&#8595 </div>
+			<div id="clickhere"> 
+				Here are my social media links!
+			</div>
+		</div>
+		<script>
+			changeTop(590);
+			arrowMotion(480);
+		</script>
+	</body>
+</html>
