@@ -83,7 +83,7 @@ li a:active{
 	position: fixed;
 	height: 130px;
 	width: 100px;
-	top: 500px;
+	bottom: 50px;
 	left: 130px;
 	background-color: white;
 	border-radius: 25px;
@@ -119,6 +119,7 @@ li a:active{
 	height: 150px;
 	width: 150px;
 	left: 40px;
+	bottom: 0;
 	color:black;
 }
 
