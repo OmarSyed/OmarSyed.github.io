@@ -63,27 +63,27 @@ function arrowMotion(starting){
 	var id = setInterval(frame, 10); 
 	function frame(){
 		if (pos == 50){
-			direction = 1; 
+			direction = 0; 
 			pos --;
-			arrow[0].style.top = starting+pos+"px"; 
+			arrow[0].style.bottom = starting+pos+"px"; 
 		}	
-		else if (pos > 0 && pos < 50 && direction == 0){ // if arrow is going up
-			pos ++; 
-			arrow[0].style.top = starting+pos+"px"; 
+		else if (pos > 0 && pos < 50 && direction == 0){ // if arrow is going down
+			pos --; 
+			arrow[0].style.bottom = starting+pos+"px"; 
 		}
-		else if (pos > 0 && pos < 50 && direction == 1){ //if arrow is going down
-			pos --;
-			arrow[0].style.top = starting+pos+"px";
+		else if (pos > 0 && pos < 50 && direction == 1){ //if arrow is going up
+			pos ++;
+			arrow[0].style.bottom = starting+pos+"px";
 		}
 		else if (pos == 0){
-			direction = 0;
+			direction = 1;
 			pos ++; 
-			arrow[0].style.top = starting+pos+"px"; 
+			arrow[0].style.bottom = starting+pos+"px"; 
 		}
 	}
 }
 
-function changeTop(pos){
+function changeBottom(pos){
 	var clickhere = document.getElementById("clickhere");
-	clickhere.style.top = pos+"px";
+	clickhere.style.bottom = pos+"px";
 }
