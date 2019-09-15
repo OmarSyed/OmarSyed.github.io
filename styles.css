@@ -55,13 +55,12 @@ li a:active{
 }
 
 #pic{
-    	transform: rotate(90deg);
-	position: absolute;
+	position: relative;
 	overflow: hidden;
 	left: 450px;
 	top: 150px;
 	height: 480px;
-	width: 600px;
+	width: 480px;
 }
 
 #welcome{
