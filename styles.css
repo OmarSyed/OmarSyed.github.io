@@ -62,6 +62,7 @@ li a:active{
 	height: 780px;
 	width: 480px;
 	padding-bottom: 50px; 
+	z-index: -1; 
 }
 
 #welcome{
