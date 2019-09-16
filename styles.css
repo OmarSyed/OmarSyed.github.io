@@ -3,7 +3,7 @@ body {
 	background-color: gray;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -21,11 +21,12 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: "Arial";
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: gray;
+  background-color: gray;
 	color: white;
 	text-decoration: none;
 }
@@ -47,32 +48,57 @@ li a:active{
 
 
 .bottom_nav{
-	background-color: black;
+	  background-color: black;
     overflow: hidden;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-#pic{
+#Home {
+    position: absolute; 
+    left: 0px;
+    top: 0px; 
+}
+
+#pic {
+  padding-top: 50px; 
 	position: relative;
 	overflow: hidden;
-	left: 450px;
-	top: 150px;
-	height: 780px;
-	width: 480px;
-	padding-bottom: 50px; 
+	height: 453px;
+	width: 307px; 
 	z-index: -1; 
 }
 
-#welcome{
-	top: 150px;
-	left: 990px;
-	width: 250px;
-	position: absolute;
-	padding: 20px;
-	border-radius: 25px;
+#welcome-container {
+   position: absolute; 
+   padding-left: 310px; 
+   top: 50px;
+}
+
+#welcome {
+	width: 250px; 
+  margin: auto;
+  padding: 10px; 
 	background-color: white;
+  font-family: "Arial";
+  position: absolute;
+	border-radius: .4em;
+}
+
+#welcome:after {
+  content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 52px solid transparent;
+	border-right-color: white;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -26px;
+	margin-left: -52px;
 }
 
 #clickhere{
@@ -85,17 +111,24 @@ li a:active{
 	border-radius: 25px;
 	padding: 20px;
 	font-family: helvetica;
-	font-size: 15px;
+	font-size: 25px;
 	
 }
 
+#About-container{
+   padding-top: 5px;
+   padding-left: 600px;  
+}
+
 #About{
-	padding-top: 50px;
+  overflow-y: auto;
 	background-color: white; 
-	width: 700px;
+	width: 350px;
+  height: 500px;
 	border-radius: 25px;
 	padding: 20px; 
-	text-align: center;
+	text-align: left;
+  font-family: "Arial"; 
 }
 
 #email{
@@ -116,6 +149,10 @@ li a:active{
 	left: 40px;
 	bottom: 50px;
 	color:black;
+}
+
+.description {
+   font-size: 20px;
 }
 
 .projects{
