@@ -12,7 +12,8 @@ nav ul {
 }
 
 li {
-    float: left;
+    
+	float: left;
 }
 
 li a {
@@ -26,7 +27,7 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: gray;
+  	background-color: gray;
 	color: white;
 	text-decoration: none;
 }
@@ -48,7 +49,7 @@ li a:active{
 
 
 .bottom_nav{
-	  background-color: black;
+    background-color: black;
     overflow: hidden;
     position: fixed;
     bottom: 0;
@@ -62,7 +63,7 @@ li a:active{
 }
 
 #pic {
-  padding-top: 50px; 
+  	padding-top: 50px; 
 	position: relative;
 	overflow: hidden;
 	height: 453px;
@@ -78,16 +79,16 @@ li a:active{
 
 #welcome {
 	width: 250px; 
-  margin: auto;
-  padding: 10px; 
+  	margin: auto;
+  	padding: 10px; 
 	background-color: white;
-  font-family: "Arial";
-  position: absolute;
+  	font-family: "Arial";
+  	position: absolute;
 	border-radius: .4em;
 }
 
 #welcome:after {
-  content: '';
+  	content: '';
 	position: absolute;
 	left: 0;
 	top: 50%;
@@ -101,7 +102,7 @@ li a:active{
 	margin-left: -52px;
 }
 
-#clickhere{
+#clickhere {
 	position: fixed;
 	height: 130px;
 	width: 100px;
@@ -117,18 +118,18 @@ li a:active{
 
 #About-container{
    padding-top: 5px;
-   padding-left: 600px;  
+   float: right; 
 }
 
 #About{
-  overflow-y: auto;
+  	overflow-y: auto;
 	background-color: white; 
 	width: 350px;
-  height: 500px;
+  	height: 500px;
 	border-radius: 25px;
 	padding: 20px; 
 	text-align: left;
-  font-family: "Arial"; 
+  	font-family: "Arial"; 
 }
 
 #email{
