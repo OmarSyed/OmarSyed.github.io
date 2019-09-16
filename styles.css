@@ -3,63 +3,62 @@ body {
 	background-color: gray;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
+.top_nav {
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: black;
+  	width: 100%;
 }
 
-li {
-    
-	float: left;
-}
+.top_nav li{ float: left;}
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: "Arial";
+.top_nav li a {
+	display: block;
+	color: white;
+    	text-align: center;
+    	padding: 14px 16px;
+    	text-decoration: none;
+    	font-family: "Arial";
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
-  	background-color: gray;
+.top_nav li:hover a {
+	background-color: gray;
 	color: white;
 	text-decoration: none;
 }
 
-li a:active{
-	background-color: gray;
-}
-
-
-.nav{
-	background-color: black;
-}
-
-.top_nav{
+.bottom_nav {
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
+	background-color: black;
+    	overflow: hidden;
+    	position: fixed;
+    	margin: 0;
+    	padding: 0;
+    	bottom: 0;
+    	width: 100%;
 }
 
+.bottom_nav li { float: left; }
 
-.bottom_nav{
-    background-color: black;
-    overflow: hidden;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.bottom_nav li a {
+    	display: inline-block;
+    	padding: 20px;
+    	color: white;
+    	text-align: center;
+    	padding: 14px 16px;
+    	text-decoration: none;
+    	font-family: "Arial";
 }
+
+.bottom_nav li:hover a { background-color: gray; }
 
 #Home {
-    position: absolute; 
-    left: 0px;
-    top: 0px; 
+    	position: absolute; 
+    	left: 0px;
+    	top: 0px; 
 }
 
 #pic {
@@ -72,14 +71,14 @@ li a:active{
 }
 
 #welcome-container {
-   position: absolute; 
-   padding-left: 310px; 
-   top: 50px;
+   	position: absolute; 
+   	padding-left: 310px; 
+   	top: 50px;
 }
 
 #welcome {
 	width: 250px; 
-  	margin: auto;
+	margin: auto;
   	padding: 10px; 
 	background-color: white;
   	font-family: "Arial";
@@ -102,7 +101,7 @@ li a:active{
 	margin-left: -52px;
 }
 
-#clickhere {
+#clickhere{
 	position: fixed;
 	height: 130px;
 	width: 100px;
@@ -117,8 +116,8 @@ li a:active{
 }
 
 #About-container{
-   padding-top: 5px;
-   float: right; 
+   	padding-top: 5px; 
+   	float: right; 
 }
 
 #About{
@@ -129,7 +128,7 @@ li a:active{
 	border-radius: 25px;
 	padding: 20px; 
 	text-align: left;
-  	font-family: "Arial"; 
+	font-family: "Arial"; 
 }
 
 #email{
@@ -152,9 +151,7 @@ li a:active{
 	color:black;
 }
 
-.description {
-   font-size: 20px;
-}
+.description { font-size: 20px;}
 
 .projects{
 	background-color:white;
@@ -166,7 +163,3 @@ li a:active{
 	text-align: center;
 }
 
-a:hover{
-	color: black;
-	text-decoration: none;
-}
