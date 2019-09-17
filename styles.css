@@ -91,15 +91,17 @@ body {
 }
 
 #About-container{
-   	top: 45px; 
-	right: 500px; 
+   	top: 45px;
     position: absolute;
+    left: 590px;
+    margin: auto;
+    display: inline;
 }
 
 #About{
 	overflow-y: auto;
 	background-color: white; 
-	width: 350px;
+	width: 45%;
 	height: 500px;
 	border-radius: 25px;
 	padding: 20px; 
