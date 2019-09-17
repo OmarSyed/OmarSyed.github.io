@@ -92,7 +92,6 @@ body {
 
 #About-container{
    	top: 45px; 
-    right: 555px; 
     position: absolute;
 }
 
@@ -107,6 +106,7 @@ body {
 	font-family: "Arial"; 
 	font-size: 25px; 
 	border: solid; 
+	display: inline-block; 
 }
 
 .experience-container {
@@ -157,15 +157,4 @@ body {
 	color:black;
 }
 
-.description { font-size: 20px;}
-
-.projects{
-	background-color:white;
-	height: 300px;
-	width: 500px;
-	margin: auto;
-	border: 5px solid gray;
-	border-radius: 25px;
-	text-align: center;
-}
 
