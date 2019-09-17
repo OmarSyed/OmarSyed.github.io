@@ -1,68 +1,57 @@
 body {
-	position: relative;
-	background-color: gray;
+  background-color: gray; 
+  overflow: auto; 
 }
+
 
 .top_nav {
-	list-style-type: none;
-  	margin: 0;
-  	padding: 0;
-  	overflow: hidden;
-  	background-color: black;
-  	width: 100%;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    margin: 0; 
+    padding: 10px; 
+    overflow: hidden;
+    width: 100%; 
+    background-color: black; 
+    z-index: 1; 
 }
 
-.top_nav li{ float: left;}
-
-.top_nav li a {
-	display: block;
-	color: white;
-    	text-align: center;
-    	padding: 14px 16px;
-    	text-decoration: none;
-    	font-family: "Arial";
+.top_nav a {
+    padding: 20px 20px 20px 20px; 
+    color: white; 
+    text-decoration: none;
+    font-family: "Arial"; 
+    font-size: 20px; 
 }
 
-/* Change the link color to #111 (black) on hover */
-.top_nav li:hover a {
-	background-color: gray;
-	color: white;
-	text-decoration: none;
+.top_nav a:hover{
+    background-color: gray; 
 }
 
 .bottom_nav {
-	list-style-type: none;
-	background-color: black;
-    	overflow: hidden;
-    	position: fixed;
-    	margin: 0;
-    	padding: 0;
-    	bottom: 0;
-    	width: 100%;
+    left: 0; 
+    margin: 0; 
+    padding: 10px; 
+    overflow: hidden;
+    width: 100%;
+    bottom: 0; 
+    position: fixed; 
+    background-color: black; 
+}
+.bottom_nav a {
+    padding: 20px 20px 20px 20px; 
+    color: white; 
+    text-decoration: none;
+    font-family: "Arial"; 
+    font-size: 20px; 
 }
 
-.bottom_nav li { float: left; }
-
-.bottom_nav li a {
-    	display: inline-block;
-    	padding: 20px;
-    	color: white;
-    	text-align: center;
-    	padding: 14px 16px;
-    	text-decoration: none;
-    	font-family: "Arial";
-}
-
-.bottom_nav li:hover a { background-color: gray; }
-
-#Home {
-    	position: absolute; 
-    	left: 0px;
-    	top: 0px; 
+.bottom_nav a:hover{
+    background-color: gray; 
 }
 
 #pic {
-  	padding-top: 50px; 
+  padding-top: 50px; 
 	position: relative;
 	overflow: hidden;
 	height: 453px;
@@ -77,29 +66,63 @@ body {
 }
 
 #welcome {
-	width: 250px; 
-	margin: auto;
+	  width: 250px; 
+	  margin: auto;
   	padding: 10px; 
-	background-color: white;
+	  background-color: white;
   	font-family: "Arial";
   	position: absolute;
-	border-radius: .4em;
+	  border-radius: .4em;
 }
 
 #welcome:after {
   	content: '';
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 52px solid transparent;
-	border-right-color: white;
-	border-left: 0;
-	border-bottom: 0;
-	margin-top: -26px;
-	margin-left: -52px;
+	  position: absolute;
+	  left: 0;
+	  top: 50%;
+	  width: 0;
+	  height: 0;
+	  border: 52px solid transparent;
+	  border-right-color: white;
+	  border-left: 0;
+	  border-bottom: 0;
+	  margin-top: -26px;
+	  margin-left: -52px;
 }
+
+#About-container{
+   	top: 45px; 
+    right: 555px; 
+    position: absolute;
+}
+
+#About{
+  	overflow-y: auto;
+	  background-color: white; 
+	  width: 350px;
+  	height: 500px;
+	  border-radius: 25px;
+	  padding: 20px; 
+	  text-align: left;
+	  font-family: "Arial"; 
+    font-size: 25px; 
+    border: solid; 
+}
+
+.experience-container {
+    position: absolute;
+    right: 0; 
+    top: 45px; 
+    height: 500px; 
+    width: 550px; 
+    background-color: white; 
+    border-radius: 25px; 
+    font-family: "Arial"; 
+    font-size: 18px;
+    border: solid; 
+    overflow: auto; 
+}
+
 
 #clickhere{
 	position: fixed;
@@ -115,22 +138,6 @@ body {
 	
 }
 
-#About-container{
-   	padding-top: 5px; 
-   	float: right; 
-}
-
-#About{
-  	overflow-y: auto;
-	background-color: white; 
-	width: 350px;
-  	height: 500px;
-	border-radius: 25px;
-	padding: 20px; 
-	text-align: left;
-	font-family: "Arial"; 
-}
-
 #email{
 	background-color: white;
 	padding: 20px;
@@ -139,7 +146,6 @@ body {
 	width: 500px;
 	margin: auto;
 }
-
 
 .downarrow{
 	position: fixed;
