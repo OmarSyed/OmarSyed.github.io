@@ -116,7 +116,7 @@ body {
     position: absolute;
     right: 0; 
     top: 45px; 
-    height: 400px; 
+    height: 500px; 
     width: 450px; 
     background-color: white; 
     border-radius: 25px; 
@@ -158,6 +158,26 @@ body {
 	left: 40px;
 	bottom: 50px;
 	color:black;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 
 
