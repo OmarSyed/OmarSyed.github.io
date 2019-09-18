@@ -4,11 +4,18 @@
 	<head>
 		<!-- jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="styles.css">
-		<!-- Latest compiled JavaScript -->
-		<script src="animation.js"></script>
+		<script>
+			jQuery.noConflict();
+			jQuery(document).ready(function(){
+				jQuery("#welcome").hide();
+				jQuery("#clickhere").hide();
+				jQuery(".downarrow").hide();
+				jQuery("#welcome").fadeIn(5000);
+				jQuery("#clickhere").fadeIn(5000);
+				jQuery(".downarrow").fadeIn(5000);
+			});
+		</script>
 	</head>
 	
 	<body>
@@ -18,11 +25,13 @@
 		   <a href="projects.html"> Projects </a> 
 		   <a href="rsrc/my_resume_2.pdf"> Resume </a>
         </div>
-		<!-- bottom navigation bar -->
-		<div class="bottom_nav">
-			<a href=""> Linkedin </a> 
-			<a href=""> Github </a>
-		</div>
+		<img id="pic" src="https://omarsyed.github.io/rsrc/index_pic.JPG">
+        <div id="welcome-container">
+			<div id="welcome">
+				<h2> Welcome to my page! </h2>
+				<h3> My name is Omar Syed. I am a software engineer and recent graduate from Stony Brook University with a B.S. in Computer Science. Feel free to check out my projects and resume &#128512; </h3>
+			</div>
+        </div>
 		<div class="projects-container">
 			<h2 style="text-align: center;"> Projects </h2>
 			  <table>
@@ -88,10 +97,36 @@
 				</td>
 				</tr> 
 			  </table>
+			  <table> 
+				<tr> 
+				  <th> <a href="https://www.github.com/OmarSyed/Dynamic-Allocator"> Dynamic Memory Allocator (C) </a> </th> 
+				</tr>
+				<td> 
+				  <ul>
+					  <li> Implementation of malloc, realloc, and free functions that allocate up to 4 pages (16KB) of memory from a segregated free list </li>
+					  <li> Uses first-fit policy to choose a block from the list and immediate coalescing for memory blocks holding more than 4KB (1 page) </li>
+				  </ul>
+				</td>
+				</tr> 
+			  </table>
+			  <table> 
+				<tr> 
+				  <th> <a href="https://www.github.com/OmarSyed/CMD"> Command Line (C) </a> </th> 
+				</tr>
+				<td> 
+				  <ul>
+					  <li> Implementation of Unix-based command line </li>
+					  <li> Allows directory traversal, running basic shell commands like "pwd", "help", "ls", "cat" </li>
+					  <li> Accommodates redirection and file execution via exec system call </li>
+				  </ul>
+				</td>
+				</tr> 
+			  </table>
 		</div>
-		<script>
-			changeBottom(50);
-			arrowMotion(70);
-		</script>
+		<!-- bottom navigation bar -->
+		<div class="bottom_nav">
+			<a href=""> Linkedin </a> 
+			<a href=""> Github </a>
+		</div>
 	</body>
 </html>

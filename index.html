@@ -2,7 +2,21 @@
 <html>
   <head>
        <link rel="stylesheet" href="styles.css">
+	   <!-- jQuery -->
+	   <script type="text/javascript" src="./lib/jquery-3.3.1.min.js"></script>
 	   <title> Omar Syed's page </title> 
+	   
+	   <script>
+			jQuery.noConflict();
+			jQuery(document).ready(function(){
+				jQuery("#welcome").hide();
+				jQuery("#clickhere").hide();
+				jQuery(".downarrow").hide();
+				jQuery("#welcome").fadeIn(5000);
+				jQuery("#clickhere").fadeIn(5000);
+				jQuery(".downarrow").fadeIn(5000);
+			});
+		</script>
   </head>
   
   <body>
@@ -14,13 +28,13 @@
                <a href="rsrc/my_resume_2.pdf"> Resume </a>
           </div>
          
-          <img id="pic" src="https://omarsyed.github.io/rsrc/index_pic.JPG">
-          <div id="welcome-container">
-                <div id="welcome">
-                    <h2> Welcome to my page! </h2>
-                    <h3> My name is Omar Syed. I am a software engineer and recent graduate from Stony Brook University with a B.S. in Computer Science. Feel free to check out my projects and resume &#128512; </h3>
-                </div>
-           </div>
+        <img id="pic" src="https://omarsyed.github.io/rsrc/index_pic.JPG">
+        <div id="welcome-container">
+			<div id="welcome">
+				<h2> Welcome to my page! </h2>
+				<h3> My name is Omar Syed. I am a software engineer and recent graduate from Stony Brook University with a B.S. in Computer Science. Feel free to check out my projects and resume &#128512; </h3>
+			</div>
+        </div>
     
         <div id="About-container">
       		<div id="About">
