@@ -168,6 +168,7 @@ body {
     font-family: "Arial";
     width: 800px; 
     margin:auto; 
+	top: 250px; 
 }
 
 .projects-container a {
