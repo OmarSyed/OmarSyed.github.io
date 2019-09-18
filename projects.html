@@ -12,58 +12,82 @@
 	</head>
 	
 	<body>
-		<div class="nav">
-			<nav>
-				<ul class="top_nav">
-					<li> <a href="index.html"> Home </a> </li>
-					<li> <a href="about.html"> About </a> </li>
-					<li> <a id="projects_active" href="projects.html"> Projects </a> </li>
-					<li> <a href="contact.html"> Contact </a> </li>
-					<li> <a href="https://omarsyed.github.io/rsrc/my_resume_2.pdf" target="_blank"> Resume </a> </li>
-				</ul>
-			</nav>
+		<!-- top navigation bar -->
+        <div class="top_nav">
+		   <a href="index.html"> Home </a> 
+		   <a href="projects.html"> Projects </a> 
+		   <a href="rsrc/my_resume_2.pdf"> Resume </a>
+        </div>
+		<!-- bottom navigation bar -->
+		<div class="bottom_nav">
+			<a href=""> Linkedin </a> 
+			<a href=""> Github </a>
 		</div>
-		<div class="nav">
-			<nav>
-				<ul class="bottom_nav"> 
-					<li> <a href="https://www.linkedin.com/in/omar-syed-71b001134/"> Linkedin </a> </li>
-					<li> <a href="https://www.github.com/OmarSyed"> Github </a> </li>
-				</ul>
-			</nav>
-		</div>
-		<div class="projects">
-			<h2> DataVilij </h2>
-			<h3> This is a data visualization framework built on JavaFX. Allows users to interpret data by running two types of algorithms: 
-			classification and clustering. </h3>
-			<h3> Used: JavaFX, XML </h3>
-			<h3> <a href="https://github.com/OmarSyed/DataVilij"> Link </a> </h3>
-		</div>
-		<div class="projects">
-			<h2> Invoice Automation </h2>
-			<h3> Script takes data from excel sheet and converts it into a Squareup invoice. </h3>
-			<h3> Used: Python, Pandas </h3>
-			<h3> <a href="https://github.com/OmarSyed/Automation"> Link </a> </h3>
-		</div>
-		<div class="projects">
-			<h2> Command Line </h2>
-			<h3> Linux based command terminal that allows directory traversal and file execution. Accommodates redirection. </h3>
-			<h3> Used: C </h3>
-			<h3> <a href="https://github.com/OmarSyed/CMD"> Link </a> </h3>
-		</div>
-		<div class="projects">
-			<h2> OmarChat </h2>
-			<h3> Client-server chat application that allows users to send messages in a chat room. </h3>
-			<h3> Used: Javascript, NodeJS, Bootstrap, Socket.io </h3>
-			<h3> <a href="https://github.com/OmarSyed/OmarChat"> Link </a> </h3>
-		</div>
-		<div class="projects">
-			<h2> This website </h2>
-			<h3> Used: JavaScript, Bootstrap, jQuery </h3> 
-			<h3> <a href="https://github.com/OmarSyed/OmarSyed.github.io"> Link </a> </h3>
-		</div>
-		<div class="downarrow">&#8595 </div>
-		<div id="clickhere"> 
-			Here are my social media links!
+		<div class="projects-container">
+			<h2 style="text-align: center;"> Projects </h2>
+			  <table>
+				<tr> <th> <a href="https://www.github.com/OmarSyed/OverflowClone"> INFOrum (Python)  </a> </th></tr>
+				<td> 
+				  <ul>
+						<li> Scalable and user-friendly Q&A forum, which allows users to ask, browse, and answer questions submitted by others </li>
+						<li> Utilizes Django’s user authentication API to allow account registration, verification via email, and authentication </li>
+						<li> Django Templating Language displays data (questions, comments, etc.) retrieved by view from MySQL database </li>
+				  </ul>
+				 </td> 
+			  </table> 
+			  <table> 
+				<tr> 
+				  <th> <a href="https://www.github.com/OmarSyed/overdrive_comics"> Overdrive Comics (Java/MongoDB) </a> </th> 
+				</tr>
+				<tr>
+				  <td>
+					<ul>
+						<li> Comic book creation site, which provides an outlet for comic book artists to expose their work and explore works by other artists </li>
+						<li> Angular aesthetically enhances the UI and the LiterallyCanvas library provides tools for drawing custom comic books </li>
+						<li> Spring Boot controllers handle user requests and interact with models to enact changes to MongoDB database </li>
+					</ul>
+				  </td>
+				</tr>
+			  </table>
+			  <table> 
+				<tr> 
+				  <th> <a href="https://www.github.com/OmarSyed/Automation"> Invoice Automation (Python) </a> </th> 
+				</tr>
+				<td> 
+				  <ul>
+					  <li> Web-scraper that automates process of creating invoice for over 20 customers on Squareup.com </li>
+					  <li> Exploits pandas library’s functionality to convert excel data into a dataframe to allow for easy data manipulation </li>
+					  <li> Employs Selenium Webdriver to automatically create and send invoice from customer data in dataframe, saving two hours of work </li>
+				  </ul>
+				</td>
+				</tr> 
+			  </table>
+			  <table> 
+				<tr> 
+				  <th> <a href="https://www.github.com/OmarSyed/DataVilij"> DataVilij (Java) </a></th> 
+				</tr>
+				<td> 
+				  <ul>
+					  <li> Data visualization app built on top of JavaFX </li>
+					  <li> Users can import and export data as a tsd (tab-separated data) file and take screenshots of graph </li>
+					  <li> Allows users to run K-means clustering, and classification algorithms to group data into various groups </li>
+				  </ul>
+				</td>
+				</tr> 
+			  </table>
+			  <table> 
+				<tr> 
+				  <th> <a href="https://www.github.com/OmarSyed/lp_performance_tests"> Linear Program Solver Performance Test (Python) </a> </th> 
+				</tr>
+				<td> 
+				  <ul>
+					  <li> Generates 100 different-sized linear programs in matrix form to be solved by scipy's and cvxpy's linear program solvers </li>
+					  <li> Takes the average runtime for 20 matrices of each size </li>
+					  <li> Plots the runtimes for scipy and cvxpy linear program solvers for each matrix size using matplotlib </li>
+				  </ul>
+				</td>
+				</tr> 
+			  </table>
 		</div>
 		<script>
 			changeBottom(50);

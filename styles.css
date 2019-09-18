@@ -160,6 +160,22 @@ body {
 	color:black;
 }
 
+.projects-container{
+    background-color: white; 
+    border-radius: 20px;
+    overflow-y: scroll; 
+    border: solid; 
+    font-family: "Arial";
+    width: 800px; 
+    margin:auto; 
+}
+
+.projects-container a {
+    text-decoration: underline;
+    color: black;
+    margin: auto;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
